@@ -1090,8 +1090,6 @@ ul {
 }
 
 .account-single-wrapper .bottom-img{
-    /* width: 176px;
-    height: 109px; */
     padding-top: 10px;
     
 }
@@ -1108,7 +1106,6 @@ ul {
 }
 .account-content-review li{
     padding-top: 10.5px;
-    /* position: relative; */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -1133,7 +1130,6 @@ ul {
 
     position: relative;
     cursor: pointer;
-    /* max-width: 196px; */
     margin-bottom: 20px;
 
 }
@@ -1223,8 +1219,6 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
-    border-radius: 4px;
-    font-weight: 600;
     color: white;
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -1515,16 +1509,7 @@ position: absolute;
 top: 8px;
 left: -10px;
 }
-/* .crm-software li p::before{
-    content: '';
-    position: absolute;
-    left: -12px;
-    top: 9px;
-    width: 2px;
-    height: 2px;
-    background: var(--black);
-    border-radius: 50%;
-} */
+
 
 .com-border-bottom{
     border-bottom: 1px solid #DCE5FF;
@@ -1677,7 +1662,7 @@ left: -10px;
         max-width: 120px;
     }
    .header-top .logo a img{
-        max-width: 119px;
+        max-width: 129px;
     }
     .banner-area {
             padding-top: 20px;
@@ -1736,6 +1721,8 @@ left: -10px;
     .visit-btn{
         width: 100%;
         padding: 13px 16px 13px 20px;
+        height: 50px;
+
     }
     .left-wrapper .award {
         font-size: 10px;
