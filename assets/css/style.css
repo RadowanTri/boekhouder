@@ -1108,7 +1108,7 @@ ul {
 }
 .account-content-review li{
     padding-top: 10.5px;
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -1203,7 +1203,7 @@ ul {
     position: absolute;
     top: 120%;
     transition: top 0.25s ease-out;
-    right: -25%;
+    right: -65%;
     visibility: hidden;
     opacity: 0;
     width: 349px;
@@ -1212,7 +1212,7 @@ ul {
 
 .visit-btn{
 
-
+    position: relative;
     display: inline-flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1223,7 +1223,6 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
-    background-color: inherit;
     border-radius: 4px;
     font-weight: 600;
     color: white;
@@ -1397,7 +1396,7 @@ ul {
 }
 
 
-.score-card ul::after, .score-card ul::before {
+.score-card ul::after{
     top: -28px;
     border: 6px solid rgba(255, 255, 255, 0);
     content: " ";
@@ -1408,13 +1407,12 @@ ul {
     height: 0px;
     transform: rotate(90deg);
 }
-.score-card ul::before{
-    border-right-color: #ffffff;
-    left: 85%;
+.score-card-c a:hover{
+    color: var(--black);
 }
 .score-card ul::after{
     border-right-color: #ffffff;
-    left: 85%;
+    left: 61%;
 }
 .right-wrapper {
     padding: 20px;
@@ -1636,7 +1634,18 @@ left: -10px;
  .f-social{
     gap:27px
 }
-
+.account-wrapper .score-wrapper .exceptional-area {
+    margin-bottom: 0px;
+}
+.overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+}
   @media (min-width: 992px) and (max-width: 1199px) {
     .connection {
         flex-direction: column;
@@ -1813,4 +1822,13 @@ left: -10px;
     .score-wrapper .exceptional-area .score-area-h{
         padding-bottom: 0px;
     }
+    .score-card ul::after {
+        border-right-color: #ffffff;
+        left: 92%;
+    }
+    .score-wrapper .exceptional-area:hover .score-card {
+        top: 111%;
+    }
 }
+
+
