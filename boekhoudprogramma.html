@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>boekhouder</title>
+    <meta name="keywords" content="boekhouder" />
+    <meta name="description" content="boekhouder" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome 3Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- hearer-area start -->
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/img/logo.svg" alt="">
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="talk-btn">Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item  font-16"><a href="#">Home</a></li>
+                        <li class="font-16 p8"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                viewBox="0 0 14 15" fill="none">
+                                <path
+                                    d="M4.16475 2.65024C4.11212 2.59455 4.07098 2.52904 4.04367 2.45745C4.01636 2.38586 4.00342 2.30959 4.00559 2.233C4.00776 2.1564 4.02499 2.08099 4.0563 2.01105C4.08761 1.94112 4.13239 1.87804 4.18809 1.82541C4.24378 1.77278 4.30929 1.73164 4.38088 1.70433C4.45247 1.67702 4.52874 1.66408 4.60533 1.66625C4.68193 1.66842 4.75734 1.68565 4.82728 1.71696C4.89721 1.74827 4.96029 1.79305 5.01292 1.84874L9.97125 7.09874C10.0736 7.20705 10.1307 7.35045 10.1307 7.49949C10.1307 7.64854 10.0736 7.79194 9.97125 7.90024L5.01292 13.1508C4.96064 13.2077 4.89757 13.2537 4.82738 13.286C4.75719 13.3184 4.68128 13.3364 4.60405 13.3392C4.52682 13.3419 4.44981 13.3293 4.3775 13.302C4.30519 13.2747 4.23902 13.2334 4.18284 13.1803C4.12665 13.1273 4.08157 13.0636 4.0502 12.9929C4.01884 12.9223 4.00182 12.8462 4.00014 12.7689C3.99846 12.6916 4.01214 12.6148 4.0404 12.5429C4.06866 12.471 4.11093 12.4054 4.16475 12.3499L8.74509 7.49949L4.16475 2.65024Z"
+                                    fill="#545764" />
+                            </svg></li>
+                        <li class="breadcrumb-item  font-16"><a href="#">Boekhoudprogramma</a></li>
+                        <li class="font-16 p8"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                            viewBox="0 0 14 15" fill="none">
+                            <path
+                                d="M4.16475 2.65024C4.11212 2.59455 4.07098 2.52904 4.04367 2.45745C4.01636 2.38586 4.00342 2.30959 4.00559 2.233C4.00776 2.1564 4.02499 2.08099 4.0563 2.01105C4.08761 1.94112 4.13239 1.87804 4.18809 1.82541C4.24378 1.77278 4.30929 1.73164 4.38088 1.70433C4.45247 1.67702 4.52874 1.66408 4.60533 1.66625C4.68193 1.66842 4.75734 1.68565 4.82728 1.71696C4.89721 1.74827 4.96029 1.79305 5.01292 1.84874L9.97125 7.09874C10.0736 7.20705 10.1307 7.35045 10.1307 7.49949C10.1307 7.64854 10.0736 7.79194 9.97125 7.90024L5.01292 13.1508C4.96064 13.2077 4.89757 13.2537 4.82738 13.286C4.75719 13.3184 4.68128 13.3364 4.60405 13.3392C4.52682 13.3419 4.44981 13.3293 4.3775 13.302C4.30519 13.2747 4.23902 13.2334 4.18284 13.1803C4.12665 13.1273 4.08157 13.0636 4.0502 12.9929C4.01884 12.9223 4.00182 12.8462 4.00014 12.7689C3.99846 12.6916 4.01214 12.6148 4.0404 12.5429C4.06866 12.471 4.11093 12.4054 4.16475 12.3499L8.74509 7.49949L4.16475 2.65024Z"
+                                fill="#545764" />
+                        </svg></li>
+                        
+                        <li class="breadcrumb-item font-16 active" aria-current="page">Alle Boekhoudprogramma's voor een ZZP</li>
+                    </ol>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- hearer-area end -->
+
+    <main class="boek-page">
+        <section class="main-wrapper">
+            <div class="boek-banner">
+                <div class="container">
+                    <h1 class="banner-heading">Alle Boekhoudprogramma's voor een ZZP
+                    </h1>
+                    <p class="banner-content">
+                        Lees recensies van de beste CRM-platforms op de markt en vind het platform dat het beste aansluit bij uw zakelijke behoeften.
+                    </p>
+                </div>
+            </div>
+            <div class="banner-bottom mt-0">
+                <div class="container">
+                    <div class="row sm-column-reverse">
+                        <div class="col-xl-9 col-lg-8 col-md-6">
+                            <div class="boek-left-wrapper-area">
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <button class="award">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_207_1118)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.3996 5.96175C11.3452 7.47855 10.7636 10.4353 9.55641 10.7545C8.25881 11.0985 7.31961 11.1305 5.07241 10.6409C4.60681 10.5697 4.13721 10.5313 3.66601 10.5265C3.62498 10.5255 3.586 10.5084 3.55743 10.4789C3.52886 10.4495 3.51299 10.41 3.51321 10.3689V5.60015C3.51274 5.57633 3.51793 5.55274 3.52836 5.53132C3.53879 5.5099 3.55417 5.49126 3.57321 5.47695C3.87881 5.25935 4.06201 4.68895 4.39161 4.39455C5.01081 3.84095 5.48361 3.67535 5.89881 3.36255C6.61241 2.82335 6.74361 2.13935 6.97001 1.60255C7.15561 1.16255 7.46121 0.848948 7.91881 1.05295C8.38041 1.25935 8.86201 2.09775 8.28361 3.28975C8.11561 3.63615 7.87481 3.88815 7.65321 4.49935C7.60281 4.64095 7.59081 4.86575 7.75321 4.85535C8.65921 4.78713 9.56935 4.79516 10.474 4.87935C10.7361 4.91052 10.9768 5.03917 11.1483 5.23973C11.3198 5.44028 11.4095 5.69805 11.3996 5.96175ZM2.91321 10.4689V5.26815C2.91321 5.2269 2.90507 5.18605 2.88926 5.14795C2.87345 5.10985 2.85028 5.07525 2.82108 5.04612C2.79187 5.01698 2.7572 4.9939 2.71906 4.97819C2.68092 4.96248 2.64006 4.95444 2.59881 4.95455H0.913209C0.830037 4.95455 0.750272 4.98759 0.691461 5.0464C0.632649 5.10521 0.599609 5.18498 0.599609 5.26815V10.4689C0.600028 10.5521 0.633177 10.6317 0.691875 10.6905C0.750573 10.7494 0.830094 10.7827 0.913209 10.7833H2.59961C2.68286 10.7829 2.76259 10.7497 2.82146 10.6908C2.88033 10.6319 2.91279 10.5522 2.91321 10.4689Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_207_1118">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>Award-Winning Software</span>
+                                    </button>
+                                    <div class="numbering"> 1 </div>
+                                    <div>
+                                        <div class="text-center">
+                                             <!-- <img src="assets/img/Frame 40014.svg" alt="e-Boekhouden"> -->
+                                            <img src="assets/img/zzp/1.svg" alt="e-Boekhouden">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse ">
+                                        
+                                                <h3 class="account-title font-22">e-Boekhouden.nl</h3>
+                                        
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">10</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.7 </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                e-Boekhouden.nl heeft een 4.7/5 score op Trustpilot. Het boekhoudprogramma is populair en behoort tot de Top 3 meest gebruikte boekhoudprogramma's voor ZZP en BV eigenaren. En heeft nu een gratis proef account.
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk e-Boekhouden.nl Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {e-Boekhouden.nl} Review</a>
+                                            </div>
+                                
+                                            <div class="sm-block mt-10">
+
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 2 </div>
+                                    <div>
+                                        <div class="text-center">
+                                             <!-- <img src="assets/img/Frame 40014.svg" alt="e-Boekhouden"> -->
+                                            <img src="assets/img/zzp/2.svg" alt="e-Boekhouden">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse ">
+                                        
+                                                <h3 class="account-title font-22">Moneymonk</h3>
+                                        
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">9</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.7 </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                MoneyMonk is vooral geschikt voor zzp’ers die uren schrijven. Het boekhoudpakketstaat bekend om het gebruiksgemak en klantenservice, en heeft een hoge trustpilot score van4,9/5.
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Moneymonk Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Moneymonk} Review</a>
+                                            </div>
+                                
+                                            <div class="sm-block mt-10">
+
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 3 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/3.svg" alt="e-Boekhouden">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Tellow</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">8</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.3 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Tellow richt zich op gebruiksgemak voor freelancers en ZZP’ers. Bonnen en facturen worden automatisch verwerkt en scan je eenvoudig in. Handmatige invoer is bijna niet meer nodig. En dat scheelt tijd. 
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Tellow Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Tellow} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 4 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/4.svg" alt="Snelstart">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Snelstart</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">9</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.5 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                SnelStart is een gespecialiseerd bedrijf dat al 40 jaar dé boekhoudsoftware biedt aan alle soorten ondernemers. Van zzp’ers en midden- en kleinbedrijf tot boekhouders en accountants.
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk SnelStart Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Snelstart} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 5 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/5.svg" alt="Moneybird">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Moneybird</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">10</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.4</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Moneybird richt zich op gebruiksgemak voor freelancers en ZZP’ers. Bonnen en facturen worden automatisch verwerkt en scan je eenvoudig in. Handmatige invoer is bijna niet meer nodig. En dat scheelt tijd. 
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Moneybird Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Moneybird} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 6</div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/7.svg" alt="Jortt">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Jortt</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">7</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.8</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Jorrt is een online boekhoudprogramma dat boekhouden voor iedereen begrijpelijk maakt. Het geeft ondernemers inzicht, in begrijpelijke taal. Zeer compleet programma, waarin zoveel mogelijk boekingen ...
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Jortt Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Jortt} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 7 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/6.svg" alt="Jortt">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Informeronline</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">8</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                InformerOnline bespaart kleine ondernemers veel tijd en maakt gebruik van moderne middelen om de boekhouding eenvoudig te maken. Uitgaven fotograferen en via WhatsApp naar InformerOnline sturen, elke bank te ...
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Informeronline Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Informeronline} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 8 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/8.svg" alt="Visma eAccounting">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Visma eAccounting</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">10</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Met Visma eAccounting wordt het voor elke ondernemer, vereniging of stichting mogelijk om zelf de boekhouding te doen. Deels uitbesteden met de hulp van een professional kan via Visma ook.
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Visma eAccounting Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Visma eAccounting} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 9 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/9.svg" alt="Digi BTW">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Digi BTW </h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">10</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h pb-0">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Rating BV:</p>
+                                                       
+                                                    </div>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">1</span>/10
+                                                    </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Bij het inrichten van een nieuwe administratie zijn de handleidingen nauwelijks noodzakelijk, alles gaat eenvoudig en intuïtief. Verrassend compleet voor een lage maandprijs. DigiBTW komt namelijk ...
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Digi BTW Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Digi BTW} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                                <div class="left-wrapper p-sm-20 mb-20">
+                                    <div class="numbering"> 10 </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="assets/img/zzp/10.svg" alt="Rompslomp">
+                                        </div>
+                                        <div class="lg-block mt-10">
+                                            <a href="#" class="visit-btn ">
+                                                <span>Bekijken</span>
+                                                <div class="arrow-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="account-content-review-b f-column-reverse">
+                                                <h3 class="account-title font-22">Rompslomp</h3>
+                                            <div class="score-wrapper">
+                                                <div class="d-flex align-items-center gap-4px">
+                                                    <p class="f-12">
+                                                        Boekhouder.nl Rating ZZP:
+                                                    </p>
+                                                    <p class="f-12-b">
+                                                        <span class="font-22-b">6</span>/10
+                                                    </p>
+                                                </div>
+                                                <div class="score-area-h">
+                                                    <div class="score-content">
+                                                        <p class="f-12">Review score</p>
+                                                        <p class="score-icon-boek d-flex">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="score-num">4.0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- account-single-wrapper -->
+                                        <div class="e-boek-content">
+                                            <p>
+                                                Rompslomp biedt alle functionaliteiten om als ZZP’er een volledige administratie en boekhouding te voeren. Het maken van offertes en facturen in de eigen huisstijl is heel gemakkelijk. Offertes digitaal ...
+                                            </p>
+                                            <div class="d-block mt-10">
+                                                <a  href="#" class="reviews-link lg-block">
+                                                    Bekijk Rompslomp Review
+                                                </a>
+                                                <a  href="#" class="reviews-link text-center sm-block">Bekijk {Rompslomp} Review</a>
+                                            </div>
+                                            <div class="sm-block mt-10">
+                                                <a href="#" class="visit-btn ">
+                                                    <span>Bekijken</span>
+                                                    <div class="arrow-icon">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12.8372 5.42774L12.9131 5.3524C13.2421 5.06411 13.7598 5.04193 14.1178 5.28587L14.2037 5.3524L20.5918 10.9505L20.6296 10.9857L20.6799 11.04L20.7453 11.1289L20.7941 11.2191L20.8264 11.3033L20.8528 11.4216L20.8591 11.516L20.8566 11.5762L20.8406 11.6766L20.8137 11.7657L20.7736 11.8545L20.7259 11.9325L20.6586 12.0162L20.5918 12.0815L14.2037 17.6797C13.8473 17.992 13.2695 17.992 12.9131 17.6797C12.5842 17.3914 12.5589 16.9378 12.8372 16.624L12.9131 16.5487L17.7417 12.3158H3.52001C3.016 12.3158 2.60742 11.9577 2.60742 11.516C2.60742 11.0744 3.016 10.7163 3.52001 10.7163H17.7435L12.9131 6.4834C12.5842 6.1951 12.5589 5.74147 12.8372 5.42774L12.9131 5.3524L12.8372 5.42774Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- left-wrapper -->
+                            </div>
+                        </div>
+                        <!-- col-lg-9 end  -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="right-wrapper beste-wrapper mb-40">
+                                <h3 class="beste-heading">De 5 Beste Boekhoudprogramma's voor ZZP</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="beste-content">
+                                            <div class="beste-connect-content">
+                                                <div class="beste-icon">
+                                                    <img src="assets/img/e-book-boek1.svg" alt="e-book-be ">
+                                                </div>
+                                                <h3 class="font-16 font-700">e-Boekhouden</h3>
+                                            </div>
+                                            <img src="assets/img/Button.svg" alt="Button">
+                                        </a>
+                                   </li>
+                                    <li>
+                                        <a href="#" class="beste-content">
+                                            <div class="beste-connect-content">
+                                                <img src="assets/img/money-boek.png" alt="money-boek">
+                                                <h3 class="font-16 font-700">Moneymonk</h3>
+                                            </div>
+                                            <img src="assets/img/Button.svg" alt="Button">
+                                        </a>
+                                   </li>
+                                    <li>
+                                        <a href="#" class="beste-content">
+                                            <div class="beste-connect-content">
+                                                <img src="assets/img/tellow-boek.svg" alt="tellow-boek">
+                                                <h3 class="font-16 font-700">Tellow</h3>
+                                            </div>
+                                            <img src="assets/img/Button.svg" alt="Button">
+                                        </a>
+                                   </li>
+                                    <li>
+                                        <a href="#" class="beste-content">
+                                            <div class="beste-connect-content">
+                                                <img src="assets/img/snel-boek.svg" alt="snel-boek">
+                                                <h3 class="font-16 font-700">Snelstart</h3>
+                                            </div>
+                                            <img src="assets/img/Button.svg" alt="Button">
+                                        </a>
+                                   </li>
+                                    <li>
+                                        <a href="#" class="beste-content">
+                                            <div class="beste-connect-content">
+                                                <img src="assets/img/moneybird-boek.svg" alt="moneybird-boek">
+                                                <h3 class="font-16 font-700">Moneybird</h3>
+                                            </div>
+                                            <img src="assets/img/Button.svg" alt="Button">
+                                        </a>
+                                   </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- col-lg-3 end  -->
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+     
+
+    </main>
+
+    <!-- footer-area start -->
+    <footer class="footer-area mt-0">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between footer-wrapper">
+                <a href="index.html" class="f-logo">
+                    <img src="assets/img/logob.svg" alt="f-logo">
+                </a>
+                <div class="f-social d-flex align-items-center">
+                    <div class="divider-f"> </div>
+                    <a href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.536 28V18.712H23.6467L24.112 15.1013H20.536V12.7973C20.536 11.752 20.8267 11.0387 22.3253 11.0387H24.2373V7.80933C23.3117 7.71113 22.3815 7.6635 21.4507 7.66667C18.6947 7.66667 16.808 9.34933 16.808 12.44V15.1013H13.6907V18.712H16.808V28H5.33333C4.97971 28 4.64057 27.8595 4.39052 27.6095C4.14048 27.3594 4 27.0203 4 26.6667V5.33333C4 4.97971 4.14048 4.64057 4.39052 4.39052C4.64057 4.14048 4.97971 4 5.33333 4H26.6667C27.0203 4 27.3594 4.14048 27.6095 4.39052C27.8595 4.64057 28 4.97971 28 5.33333V26.6667C28 27.0203 27.8595 27.3594 27.6095 27.6095C27.3594 27.8595 27.0203 28 26.6667 28H20.536Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.4467 24.452H20.8933V18.8827C20.8933 17.5547 20.8667 15.8453 19.04 15.8453C17.188 15.8453 16.9053 17.2907 16.9053 18.7853V24.452H13.3507V13H16.764V14.56H16.8107C17.288 13.6613 18.448 12.7107 20.1813 12.7107C23.7813 12.7107 24.448 15.0813 24.448 18.1653V24.452H24.4467ZM9.33733 11.4333C9.06607 11.4337 8.79741 11.3805 8.54675 11.2768C8.29609 11.1731 8.06836 11.021 7.87661 10.8291C7.68486 10.6372 7.53287 10.4094 7.42935 10.1587C7.32582 9.90795 7.27281 9.63926 7.27333 9.368C7.2736 8.95978 7.39491 8.5608 7.62192 8.22153C7.84894 7.88225 8.17146 7.61791 8.54871 7.46194C8.92595 7.30596 9.34098 7.26536 9.74131 7.34525C10.1416 7.42515 10.5093 7.62197 10.7977 7.91081C11.0862 8.19965 11.2826 8.56755 11.3619 8.96798C11.4413 9.3684 11.4002 9.78338 11.2437 10.1604C11.0872 10.5375 10.8225 10.8597 10.4829 11.0862C10.1434 11.3128 9.74422 11.4336 9.336 11.4333H9.33733ZM11.1187 24.452H7.55467V13H11.12V24.452H11.1187ZM26.2267 4H5.772C4.79067 4 4 4.77333 4 5.72933V26.2707C4 27.2267 4.792 28 5.77067 28H26.2213C27.2 28 28 27.2267 28 26.2707V5.72933C28 4.77333 27.2 4 26.2213 4H26.2253H26.2267Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area end -->
+
+    <!-- Jquery JS Link -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS Link -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- carousel slider JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

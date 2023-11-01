@@ -1133,6 +1133,7 @@ ul {
     margin-bottom: 20px;
 
 }
+.score-wrapper > .score-area-h,
     .score-wrapper .exceptional-area .score-area-h{
         display: inline-flex;
         align-items: center;
@@ -1631,10 +1632,380 @@ left: -10px;
     height: 100%;
     width: 100%;
 }
+
+ /* version 2  */
+ .boek-banner{
+    padding-top: 40px;
+    padding-bottom: 60px;
+ }
+ .boek-banner .banner-heading{
+    color: var(--black);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-bottom: 20px;
+ }
+ .boek-banner .banner-content{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%; 
+ }
+
+ .boek-page .boek-left-wrapper-area .left-wrapper {
+    gap: 20px;
+    align-items: end;
+}
+
+ .f-12{
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 600;
+ }
+ .f-12-b{
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+ }
+ .font-18-b{
+    color: #050E29;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.font-22-b{
+    font-size: 22px;
+}
+.font-24{
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 140%
+}
+.font-28{
+    color: var(--black);
+    font-size: 28px;
+    font-weight: 600;
+}
+.gap-4px{
+    gap: 4px;
+}
+.boek-left-wrapper-area .account-content-review-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boek-left-wrapper-area .score-wrapper{
+    display: flex;
+    gap: 10px;
+}
+.single-alternatieven >p,
+.boek-left-wrapper-area .e-boek-content p{
+    overflow: hidden;
+     color: var(--black);
+    text-overflow: ellipsis;
+    white-space:wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; 
+    height: 59px;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 10px 0px;
+    /*
+    display: inline-block; */
+    
+}
+.single-alternatieven .reviews-link,
+ .boek-left-wrapper-area .e-boek-content .reviews-link {
+    color: #403BCB;
+    font-size: 16px;
+    font-weight: 700;
+}
+.beste-heading{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    word-break: break-all;
+}
+.beste-content-heading{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%; 
+    }
+    .beste-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        color: var(--black);
+    }
+    .beste-content .beste-connect-content{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+ 
+    }
+    .score-wrapper .score-icon-boek i{
+        font-size: 15px;
+        color: #FFDB21;
+    }
+    .beste-content .beste-connect-content .beste-icon{
+       width: 32px;
+    }
+    .beste-wrapper li{
+        padding-bottom: 10px;
+        border-bottom:1px solid  #DCE5FF;
+    }
+     .beste-wrapper li:last-child{
+        padding-bottom: 0px;
+        border-bottom:none;
+    }
+    /* boekhoudennl page */
+    .padding-30{
+        padding: 30px;
+    }
+    .box-shadow{
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(13, 7, 45, 0.06);
+    }
+    .boekhoudennl-banner .banner-heading{
+        color: var(--black);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 110%;
+        padding-bottom: 20px;
+    }
+    .boekhoudennl-banner .banner-content{
+         color: var(--black);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        padding-bottom: 40px;
+    }
+    .boekhoudennl-review .review-by{
+        border-bottom: 1px solid #DCE5FF;
+        padding-bottom:20px;
+        margin-bottom: 15px;
+    }
+    .boekhoudennl-review .visit-btn{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    .profile p{
+        color: var(--black);
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .boekhoudennl-banner-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 72px 40px 104px;
+        gap: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .boekhoudennl-bottom-content{
+
+        max-width: 264px;
+    }
+
+    .product-wrapper{
+        padding: 60px 0px;
+        border-radius: 0%;
+    }
+    .product-dis h3{
+        color: #050E29;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 130%;
+        padding-bottom: 20px;
+    }
+    .line-height-130{
+        line-height: 130%;
+    }
+    .line-height-140{
+        line-height: 140%;
+    }
+    .minder-crm .card{
+        max-width:592px;
+        width: 100%;
+        border:1px solid #E2E3E3;
+        margin-bottom: 30px;
+    }
+    .minder-crm .card .card-header{
+        display: flex;
+        justify-content: space-between;
+        gap: 170px;
+        padding: 20px;
+        border-bottom: none;
+    }
+    .minder-crm .card .list-group-item{
+        padding: 20px 20px 15px 20px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(13, 7, 45, 0.08);
+        
+    }
+   
+    .product-single-wrapper  .online-props-wrapper{
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .product-single-wrapper  .online-props-wrapper img {
+        margin-right: 4px;
+    }
+   .product-single-wrapper  .score-content .score-icon{
+    padding-top: 5px;
+   }
+   .product-single-wrapper .product-review-c{
+    padding-top: 5px;
+   }
+   .product-single-wrapper .product-review-c p{
+    padding-top: 10px;
+   }
+   .crm-review-btn{
+    display: inline-block;
+    width: auto;
+    padding: 16px 24px;
+    height: auto;
+   }
+   .crm-beoordelling{
+    padding: 20px;
+    border-radius: 8px;
+    background: #F8F9FA;
+   }
+   .crm-beoordelling h5{
+    padding-bottom: 10px;
+   }
+   .product-single-wrapper .account-bottom h5{
+    color: var(--black);
+    margin-left: 20px;
+   }
+   .com-border-bottom-20{
+    border-bottom: 1px solid #DCE5FF;
+   }
+   .functies-wrapper li{
+    padding: 15px 0px;
+    border-bottom: 1px solid #DCE5FF;
+    display: flex;
+    gap: 30px;
+   }
+   .functies-wrapper li:first-child{
+    border-top: 1px solid #DCE5FF;
+    padding-top: 20px;
+   }
+
+   .functies-wrapper li h3{
+    width: 50%;
+   }
+   .functies-wrapper li.border--b-none{
+    border-bottom: none;
+   }
+   .pbar-flex-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .product-review-progress .progress {
+    border-radius: 20px;
+    background: #F8F9FA;
+        height: 8px;
+    max-width: 749px;
+    margin: 0 auto; 
+    flex-grow: 1;
+    position: relative;
+    overflow: visible;
+    }
+    .product-review-progress .progress-bar {
+    border-radius: 20px;
+        background: #FBEB94;
+        height: 6px;
+    }
+   .product-review-progress .progress-type{
+    color: #050E29;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-right: 20px;
+    width: 80px;
+   }
+   .product-review-progress .progress-completed{
+    color: #050E29;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-left: 20px;
+   }
+   .back-to-top {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.single-alternatieven p{
+
+}
   @media (min-width: 992px) and (max-width: 1199px) {
     .connection {
         flex-direction: column;
     }
+     /* version 2  */
+    .boek-banner .banner-heading {
+        font-size: 30px;
+    }
+    .boek-left-wrapper-area .score-wrapper {
+        gap: 5px;
+        flex-direction: column;
+    }
+    .boek-page .boek-left-wrapper-area .left-wrapper {
+        gap: 15px;
+        padding: 15px;
+    }
+    .beste-wrapper{
+        padding: 15px;
+    }
+    .beste-content .beste-connect-content {
+        gap: 7px;
+    }
+    .beste-content .beste-connect-content .font-16p,    
+    .beste-content .beste-connect-content .font-16 {
+        font-size: 14px;
+    }
+    .beste-heading {
+        font-size: 18px;
+    }
+    .boek-left-wrapper-area .font-22 {
+        font-size: 18px;
+    }
+
+  }
+  @media (min-width: 767px) and (max-width: 991px) {
+    .boek-left-wrapper-area .score-wrapper {
+        flex-direction: column;
+    }
+    
+   
+    
   }
   @media (min-width: 320px) and (max-width: 991px) {
      .f-column-reverse{
@@ -1806,16 +2177,73 @@ left: -10px;
     margin-bottom: 0px;
 
 }
-    .score-wrapper .exceptional-area .score-area-h{
-        padding-bottom: 0px;
-    }
-    .score-card ul::after {
-        border-right-color: #ffffff;
-        left: 92%;
-    }
-    .score-wrapper .exceptional-area:hover .score-card {
-        top: 111%;
-    }
+.score-wrapper .exceptional-area .score-area-h{
+    padding-bottom: 0px;
 }
+.score-card ul::after {
+    border-right-color: #ffffff;
+    left: 92%;
+}
+.score-wrapper .exceptional-area:hover .score-card {
+    top: 111%;
+}
+/* version 2 */
 
+    .boek-left-wrapper-area  .left-wrapper {
+        padding: 20px;
+    }
+    .boek-left-wrapper-area .account-content-review-b{
+        padding: 20px 0px;
+    }
+    .f-12-b,
+    .f-12{
+        font-size: 10px;
+     }
+     .boek-left-wrapper-area .score-num{
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .boek-banner .banner-heading {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+    .boek-banner {
+        padding-top: 10px;
+        padding-bottom:20px;
+    }
+    .beste-heading {
+        font-size: 18px;
+    }
+    .mb-sm-20{
+        margin-bottom: 20px;
+    }
+    
+/* boekhoudennl page */
+    .boekhoudennl-banner .banner-heading {
+        font-size: 24px;
+        padding-bottom: 13px;
+    }
+    .boekhoudennl-banner-bottom {
+        padding: 20px 20px 52px 20px;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .boekhoudennl-banner .banner-content {
+        padding-bottom: 20px;
+    }
+    
+  }
 
+    @media (min-width: 320px) and (max-width: 767px) {
+         .sm-column-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .boek-left-wrapper-area .score-wrapper {
+            flex-direction: row;
+        }
+    
+    }
