@@ -2340,8 +2340,13 @@ ul {
     .boek-left-wrapper-area .account-content-review-b  .account-title {
         width: 100%;
     }
-    /* .boek-left-wrapper-area .account-content-review-b{
-        align-items:start;
-    } */
+    .boek-left-wrapper-area .score-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .product-single-wrapper .account-bottom {
+        align-items: self-start;
+    }
 
 }
