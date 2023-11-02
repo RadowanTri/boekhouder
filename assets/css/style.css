@@ -1575,6 +1575,7 @@ left: -10px;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    gap: 5px;
 }
 
 .section-pt-60{
@@ -1634,6 +1635,9 @@ left: -10px;
 }
 
  /* version 2  */
+ .header-bottom .breadcrumb-item{
+    margin-bottom: 8px;
+ }
  .boek-banner{
     padding-top: 40px;
     padding-bottom: 60px;
@@ -1724,6 +1728,9 @@ left: -10px;
     color: #403BCB;
     font-size: 16px;
     font-weight: 700;
+}
+.boek-left-wrapper-area .e-boek-content .reviews-link{
+    background: transparent;
 }
 .beste-heading{
     color: var(--black);
@@ -1870,9 +1877,10 @@ left: -10px;
     .product-single-wrapper  .online-props-wrapper{
         gap: 40px;
         margin-top: 30px;
+        padding-bottom: 30px;
     }
     .product-single-wrapper  .online-props-wrapper img {
-        margin-right: 4px;
+        margin-right: 5px;
     }
    .product-single-wrapper  .score-content .score-icon{
     padding-top: 5px;
@@ -1958,13 +1966,39 @@ left: -10px;
     display: block;
     margin-left: 20px;
    }
-   .back-to-top {
-    margin-top: 30px;
-    margin-bottom: 60px;
+ 
+.alternatieven{
+    background: #F8F9FA;
+    padding: 60px 0px;
 }
-.single-alternatieven p{
+.single-alternatieven{
+    padding: 10px 20px 20px 20px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.single-alternatieven .reviews-link{
+    margin-top: 8px;
+    display: block;
+    margin-bottom: 10px;
+}
+.alternatieven-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.single-alternatieven .visit-btn{
+    width: 100%;
+}
+.product-single-wrapper  .online-props-wrapper h5{
+    text-align: left;
+}
+..product-single-wrapper  .online-props-wrapper h5
+.product-history 
+.product-history p{
+    color: var(--black);
+}
 
-}
+
   @media (min-width: 992px) and (max-width: 1199px) {
     .connection {
         flex-direction: column;
@@ -1997,11 +2031,29 @@ left: -10px;
     .boek-left-wrapper-area .font-22 {
         font-size: 18px;
     }
+    .minder-crm .card .card-header {
+        gap: 30px;
+    }
+    
 
   }
   @media (min-width: 767px) and (max-width: 991px) {
     .boek-left-wrapper-area .score-wrapper {
         flex-direction: column;
+    }
+    .alternatieven-grid{
+   
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .product-single-wrapper .w-50{
+        width: 100% !important;
+    }
+    .beste-content .beste-connect-content {
+        gap: 5px;
+    }
+    .beste-content .beste-connect-content  .font-16{
+        font-size: 14px;
     }
     
    
@@ -2219,14 +2271,19 @@ left: -10px;
     .mb-sm-20{
         margin-bottom: 20px;
     }
-    
+    .boekhoudennl-banner .profile p{
+        font-size: 14px;
+    }
+    /* .boekhoudennl-banner .font-22{
+        font-size: 14px;
+    } */
 /* boekhoudennl page */
     .boekhoudennl-banner .banner-heading {
         font-size: 24px;
         padding-bottom: 13px;
     }
     .boekhoudennl-banner-bottom {
-        padding: 20px 20px 52px 20px;
+        padding:20px;
         flex-direction: column;
         margin-top: 20px;
         margin-bottom: 40px;
@@ -2234,6 +2291,40 @@ left: -10px;
     .boekhoudennl-banner .banner-content {
         padding-bottom: 20px;
     }
+    .product-wrapper {
+        padding: 40px 0px;
+    }
+    .minder-crm .card .card-header {
+        gap: 25px;
+    }
+    .minder-crm .card .card-header .font-20{
+        font-size: 16px;
+    }
+    .product-single-wrapper .online-props-wrapper .w-50{
+        width: 100% !important;
+    }
+    .product-single-wrapper .online-props-wrapper {
+        padding-bottom: 19px;
+    }
+    .alternatieven .online-account-title h3,
+    .product-single-wrapper .online-account-title h3 {
+        font-size: 28px;
+    }
+    .product-single-wrapper  .account-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-review-progress .score-content{
+        flex-direction: column;
+        gap: 4px;
+    }
+    .alternatieven {
+        padding-bottom: 40px;
+    }
+    /* .product-single-wrapper .account-bottom .visit-btn{
+        width: ;
+    }
+    */
     
   }
 
@@ -2244,6 +2335,14 @@ left: -10px;
         }
         .boek-left-wrapper-area .score-wrapper {
             flex-direction: row;
+        }
+        .alternatieven-grid{
+            text-align: center;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+        .beste-wrapper{
+            display: none;
         }
     
     }
