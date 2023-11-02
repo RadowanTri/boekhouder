@@ -2323,9 +2323,10 @@ ul {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
     }
-    .beste-wrapper{
-        display: none;
+    .sm-none{
+        display: none !important;
     }
+   
     
 }
 
