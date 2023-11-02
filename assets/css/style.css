@@ -1986,7 +1986,9 @@ ul {
 .product-history p{
     color: var(--black);
 }
-
+.account-content-review-b .score-content{
+    text-align: end;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .connection {
@@ -1999,6 +2001,7 @@ ul {
     .boek-left-wrapper-area .score-wrapper {
         gap: 5px;
         flex-direction: column;
+        align-items: end;
     }
     .boek-page .boek-left-wrapper-area .left-wrapper {
         gap: 15px;
@@ -2027,9 +2030,9 @@ ul {
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-    .boek-left-wrapper-area .score-wrapper {
+    /* .boek-left-wrapper-area .score-wrapper {
         flex-direction: column;
-    }
+    } */
     .alternatieven-grid{
    
         grid-template-columns: repeat(2, 1fr);
@@ -2228,7 +2231,9 @@ ul {
         padding: 20px;
     }
     .boek-left-wrapper-area .account-content-review-b{
-        padding: 20px 0px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        gap: 12px;
     }
     .f-12-b,
     .f-12{
@@ -2322,4 +2327,20 @@ ul {
         display: none;
     }
     
+}
+
+@media (min-width: 320px) and (max-width: 575px){
+    .boek-left-wrapper-area .e-boek-content .reviews-link {
+        width: 100%;
+    }
+    .boek-left-wrapper-area .account-content-review-b {
+        flex-direction: column-reverse;
+    }
+    .boek-left-wrapper-area .account-content-review-b  .account-title {
+        width: 100%;
+    }
+    /* .boek-left-wrapper-area .account-content-review-b{
+        align-items:start;
+    } */
+
 }
